@@ -51,9 +51,10 @@ async function runTracker() {
     const client = createClient(dbProfile, CONTACT);
 
     // Calculate "Next Friday at 08:00" dynamically
-    const targetDate = getNextDayOfWeek(new Date(), 5);
+    // const targetDate = getNextDayOfWeek(new Date(), 5);
+    const targetDate = new Date("2025-12-19T08:00:00");
 
-    console.log(`[${new Date().toISOString()}] Starting check for Friday: ${targetDate.toISOString()}`);
+    console.log(`[${new Date().toISOString()}] Starting check for: ${targetDate.toISOString()}`);
 
     try {
         const result = await client.journeys(FROM_STATION, TO_STATION, {

@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+
+# Virtual environments
+.venv/
+
+# Packaging / build artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+*.whl
+
+# Logs and temporary files
+*.log
+logs/
+log/
+tmp/
+*.tmp
+
+# Databases
+*.sqlite3
+# *.db
+*.db-journal
+
+# Credentials / secrets
+.env
+.env.*
+credentials/
+secrets.yaml
+
+# Node (if the scraper uses any JS tooling)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
